@@ -15,12 +15,12 @@ An interactive Streamlit-based dashboard that detects and predicts room occupanc
 https://www.kaggle.com/datasets/pooriamst/occupancy-detection/data
 
 Columns include:
-- Temperature
-- Humidity
-- Light
-- CO2
-- HumidityRatio
-- Occupancy (Target: 0 or 1)
+- `Temperature`
+- `Humidity`
+- `Light`
+- `CO2`
+- `HumidityRatio`
+- `Occupancy` (Target: 0 or 1)
 
 ## 🛠️ Technologies Used
 
@@ -32,30 +32,27 @@ Columns include:
 - Joblib – for model saving and loading
 
 ## 🧪 Model Evaluation
-✅ Random Forest Classifier achieved ~95% accuracy
-Logistic Regression and SVM also performed well (~81-89%)
+- ✅ Random Forest Classifier achieved ~95% accuracy
+- Logistic Regression and SVM also performed well (~81-89%)
 
 ## Evaluation Metrics:
-Accuracy
-Precision/Recall
-F1 Score
-Confusion Matrix
-ROC AUC Curve
-
-## 📷 Screenshots
-<img width="250" alt="dropdown-model" src="https://github.com/your-username/screenshots/accuracy-dropdown.png" /> <img width="250" alt="feature-importance" src="https://github.com/your-username/screenshots/feature-importance.png" /> <img width="250" alt="prediction-manual" src="https://github.com/your-username/screenshots/manual-predict.png" /> <img width="250" alt="batch-upload" src="https://github.com/your-username/screenshots/batch-csv.png" />
+- Accuracy
+- Precision/Recall
+- F1 Score
+- Confusion Matrix
+- ROC AUC Curve
 
 ## 📌 Insights Derived
-💡 Light and CO₂ are the strongest indicators of occupancy.
-🧠 Random Forest outperforms linear models due to its non-linearity and ensemble nature.
-📉 Class imbalance observed, requiring balanced metric evaluation.
-🏢 Potential for integration into smart HVAC systems for dynamic control.
+- 💡 Light and CO₂ are the strongest indicators of occupancy.
+- 🧠 Random Forest outperforms linear models due to its non-linearity and ensemble nature.
+- 📉 Class imbalance observed, requiring balanced metric evaluation.
+- 🏢 Potential for integration into smart HVAC systems for dynamic control.
 
 ## 📈 Future Improvements
-🌐 Integrate live IoT sensor API for real-time predictions.
-📦 Add LSTM or Deep Learning-based temporal models.
-📊 Support time-series occupancy trend forecasting.
-🔒 Secure user input and improve error handling.
+- 🌐 Integrate live IoT sensor API for real-time predictions.
+- 📦 Add LSTM or Deep Learning-based temporal models.
+- 📊 Support time-series occupancy trend forecasting.
+- 🔒 Secure user input and improve error handling.
 
 ### 👩‍💻 Author
 Kusumm Maharjan
