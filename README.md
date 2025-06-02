@@ -2,14 +2,14 @@
 An interactive Streamlit-based dashboard that detects and predicts room occupancy based on real-time environmental sensor data. This project combines machine learning, feature engineering, and intuitive visualization to power smart building decisions and optimize energy efficiency.
 
 ## 🚀 Features
-📊 **Data Exploration**: View detailed distributions of temperature, humidity, light, CO₂, and humidity ratio.
-🔥 **Feature Importance Display**: See which variables most strongly impact occupancy predictions.
-🧠 **ML Model Comparison**: Evaluate Logistic Regression, Random Forest, and SVM with accuracy charts.
-📉 **Interactive Visualizations**: Built with Plotly and Seaborn for responsive, aesthetic charts.
-📂 **Batch Prediction** : Upload your own CSV and get occupancy predictions for multiple rooms at once.
-🧮 **Manual Prediction Tool**: Enter sensor values and instantly know if the room is likely occupied.
-🎛️ **Model Insights & Tuning**: Explore accuracy, F1 scores, and hyperparameter optimization.
-📈 **Occupancy Distribution Char**t: Quickly understand data imbalance and prediction difficulty.
+- 📊 **Data Exploration**: View detailed distributions of temperature, humidity, light, CO₂, and humidity ratio.
+- 🔥 **Feature Importance Display**: See which variables most strongly impact occupancy predictions.
+- 🧠 **ML Model Comparison**: Evaluate Logistic Regression, Random Forest, and SVM with accuracy charts.
+- 📉 **Interactive Visualizations**: Built with Plotly and Seaborn for responsive, aesthetic charts.
+- 📂 **Batch Prediction** : Upload your own CSV and get occupancy predictions for multiple rooms at once.
+- 🧮 **Manual Prediction Tool**: Enter sensor values and instantly know if the room is likely occupied.
+- 🎛️ **Model Insights & Tuning**: Explore accuracy, F1 scores, and hyperparameter optimization.
+- 📈 **Occupancy Distribution Char**t: Quickly understand data imbalance and prediction difficulty.
 
 ## 🗃️ Dataset
 https://www.kaggle.com/datasets/pooriamst/occupancy-detection/data
