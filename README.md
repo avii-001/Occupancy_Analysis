@@ -1,84 +1,62 @@
-## 🏠 Occupancy Detection Dashboard
-An intelligent, interactive Streamlit-powered dashboard that analyzes and predicts room occupancy using machine learning techniques. This project showcases practical applications of AI/ML in smart environments and energy optimization using real-world sensor data.
+# 🏠 Occupancy Detection Dashboard
+An interactive Streamlit-based dashboard that detects and predicts room occupancy based on real-time environmental sensor data. This project combines machine learning, feature engineering, and intuitive visualization to power smart building decisions and optimize energy efficiency.
 
-🔗 Streamlit App: Occupancy Detection Dashboard
-https://occupancyanalysis.streamlit.app/
+## 🚀 Features
+📊 **Data Exploration**: View detailed distributions of temperature, humidity, light, CO₂, and humidity ratio.
+🔥 **Feature Importance Display**: See which variables most strongly impact occupancy predictions.
+🧠 **ML Model Comparison**: Evaluate Logistic Regression, Random Forest, and SVM with accuracy charts.
+📉 **Interactive Visualizations**: Built with Plotly and Seaborn for responsive, aesthetic charts.
+📂 **Batch Prediction** : Upload your own CSV and get occupancy predictions for multiple rooms at once.
+🧮 **Manual Prediction Tool**: Enter sensor values and instantly know if the room is likely occupied.
+🎛️ **Model Insights & Tuning**: Explore accuracy, F1 scores, and hyperparameter optimization.
+📈 **Occupancy Distribution Char**t: Quickly understand data imbalance and prediction difficulty.
 
-🚀 Features
-📊 Dataset Overview: Quickly view key sensor data like Temperature, Humidity, CO₂, Light, and Humidity Ratio.
-📈 Feature Distributions: Visualize distributions for each variable using elegant histograms.
-🌀 Correlation Heatmap: Detect multicollinearity and key influencing features.
-🎯 Model Accuracy Section: Compare multiple ML models (Logistic Regression, Random Forest, SVM) with visuals and performance scores.
-📷 Model Visuals Dropdown: Interactive dropdown for model accuracy and tuning charts.
-📂 Batch CSV Upload: Upload datasets and get real-time predictions for multiple observations.
-🧠 Manual Prediction Tool: Enter sensor values manually and get instant occupancy predictions.
-🔥 Feature Importance: Understand which features drive the model’s predictions.
-📊 Occupancy Distribution Plot: Analyze the frequency of occupied vs. unoccupied states.
+## 🗃️ Dataset
+https://www.kaggle.com/datasets/pooriamst/occupancy-detection/data
 
-🗃️ Dataset
-Source: UCI Occupancy Detection Dataset
+Columns include:
+- Temperature
+- Humidity
+- Light
+- CO2
+- HumidityRatio
+- Occupancy (Target: 0 or 1)
 
-Key Columns:
+## 🛠️ Technologies Used
 
-Temperature
+- Streamlit – for building the dashboard UI
+- Scikit-learn – for model training and evaluation
+- Pandas & NumPy – for data handling
+- Seaborn & Matplotlib – for visual analytics
+- Plotly – for interactive visuals
+- Joblib – for model saving and loading
 
-Humidity
+## 🧪 Model Evaluation
+✅ Random Forest Classifier achieved ~95% accuracy
+Logistic Regression and SVM also performed well (~81-89%)
 
-Light
+## Evaluation Metrics:
+Accuracy
+Precision/Recall
+F1 Score
+Confusion Matrix
+ROC AUC Curve
 
-CO2
+## 📷 Screenshots
+<img width="250" alt="dropdown-model" src="https://github.com/your-username/screenshots/accuracy-dropdown.png" /> <img width="250" alt="feature-importance" src="https://github.com/your-username/screenshots/feature-importance.png" /> <img width="250" alt="prediction-manual" src="https://github.com/your-username/screenshots/manual-predict.png" /> <img width="250" alt="batch-upload" src="https://github.com/your-username/screenshots/batch-csv.png" />
 
-HumidityRatio
+## 📌 Insights Derived
+💡 Light and CO₂ are the strongest indicators of occupancy.
+🧠 Random Forest outperforms linear models due to its non-linearity and ensemble nature.
+📉 Class imbalance observed, requiring balanced metric evaluation.
+🏢 Potential for integration into smart HVAC systems for dynamic control.
 
-Occupancy (Target)
+## 📈 Future Improvements
+🌐 Integrate live IoT sensor API for real-time predictions.
+📦 Add LSTM or Deep Learning-based temporal models.
+📊 Support time-series occupancy trend forecasting.
+🔒 Secure user input and improve error handling.
 
-🧠 Machine Learning Models
-Model	Accuracy
-Logistic Regression	81%
-Random Forest	95% ✅
-Support Vector Machine	89%
-
-Best Model: Random Forest Classifier
-
-Tuning: GridSearchCV used to fine-tune hyperparameters of RF model
-
-🛠️ Tech Stack
-Streamlit – Interactive UI for web-based analysis
-
-Scikit-learn – ML models & evaluation
-
-Pandas & NumPy – Data manipulation and preprocessing
-
-Matplotlib & Seaborn – Static data visualizations
-
-Plotly – Interactive bar plots and charts
-
-Joblib – Model persistence
-
-Python – Primary language used for modeling, logic, and UI
-
-📷 Screenshots
-Accuracy Dropdown	Predictions Table	Feature Importance	Manual Prediction
-	
-
-📌 Insights Derived
-🌞 Light and CO₂ are the strongest predictors of room occupancy.
-
-🤖 The Random Forest model outperforms others with ~95% accuracy.
-
-⚙️ Feature importance shows explainability and transparency of model behavior.
-
-💡 Can be integrated into Smart Building Systems for energy-saving automation.
-
-👩‍💻 Author
-
-Kusumm Maharjan - https://github.com/avii-001
-
-📈 Future Improvements
-🔗 Integrate live IoT sensor streams via APIs
-
-🧠 Add deep learning models or ensemble stacking for prediction
-
-🧩 Enable real-time model re-training with new data
-
-🗂️ Add multi-room or time-based prediction for larger facilities
+### 👩‍💻 Author
+Kusumm Maharjan
+🔗 GitHub: https://github.com/avii-001
